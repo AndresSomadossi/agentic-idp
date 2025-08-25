@@ -10,6 +10,26 @@ Agents MUST read this file before suggesting or listing stacks/technologies.
 
 ---
 
+## No-Go Technologies
+
+**Banned Technologies**  
+The following technologies are explicitly NOT supported and should never be suggested:
+
+- **Java** - Not supported in this IDP
+- **C#/.NET** - Not supported in this IDP
+- **PHP** - Not supported in this IDP
+- **Ruby** - Not supported in this IDP
+- **Scala** - Not supported in this IDP
+
+**Deployment Platforms**  
+Supported deployment options include:
+- **Cloud:** AWS, Azure, Google Cloud, Vercel, Netlify, Railway, Render
+- **Container:** Docker, Kubernetes
+- **Serverless:** AWS Lambda, Azure Functions, Vercel Functions
+- **VPS:** DigitalOcean, Linode, Hetzner
+
+---
+
 ## Templates Index
 
 <!--
@@ -23,10 +43,11 @@ Fields:
 - frameworks: array of primary frameworks
 - layers: list of notable architectural layers included
 - recommended_use: short when-to-use one-liner
-- template_path: relative path to the template’s root directory
+- template_path: relative path to the template's root directory
 - entrypoints: key entry files (relative paths)
 - ci: supported CI examples included
 - testing: primary test stack
+- deployments: supported deployment platforms and methods
 -->
 
 ```yaml
@@ -52,6 +73,13 @@ templates:
       - backend/routes.ts
     ci: github-actions
     testing: bun-test
+    deployments:
+      - platform: "Docker"
+        description: "Containerized deployment with Docker"
+      - platform: "Railway"
+        description: "Direct deployment to Railway platform"
+      - platform: "Render"
+        description: "Container deployment on Render"
 
   - id: backend-node-ts-express
     name: Backend — Node.js + TypeScript (Express/Effect/Zod)
@@ -67,6 +95,20 @@ templates:
       - src/routes.ts
     ci: github-actions
     testing: vitest
+    deployments:
+      - platform: "Docker"
+        description: "Containerized deployment with Docker"
+      - platform: "Railway"
+        description: "Direct deployment to Railway platform"
+      - platform: "Render"
+        description: "Container deployment on Render"
+      - platform: "Vercel"
+        description: "Serverless functions on Vercel"
+      - platform: "AWS Lambda"
+        description: "Serverless deployment on AWS Lambda"
+      - platform: "Azure Functions"
+        description: "Serverless deployment on Azure Functions"
+
 
   - id: frontend-nextjs-ts
     name: Frontend — Next.js + TypeScript (App Router)
@@ -81,6 +123,21 @@ templates:
       - app/page.tsx
     ci: github-actions
     testing: playwright
+    deployments:
+      - platform: "Vercel"
+        description: "Optimized deployment on Vercel"
+      - platform: "Netlify"
+        description: "Static site deployment on Netlify"
+      - platform: "Railway"
+        description: "Full-stack deployment on Railway"
+      - platform: "Render"
+        description: "Static site deployment on Render"
+      - platform: "AWS S3 + CloudFront"
+        description: "Static hosting on AWS"
+      - platform: "Azure Static Web Apps"
+        description: "Static hosting on Azure"
+      - platform: "VPS"
+        description: "Traditional VPS deployment"
 
   - id: fullstack-turbo-nextjs-nest
     name: Fullstack — Turborepo (Next.js + NestJS)
@@ -96,3 +153,16 @@ templates:
       - apps/api/src/main.ts
     ci: github-actions
     testing: vitest
+    deployments:
+      - platform: "Vercel"
+        description: "Frontend on Vercel, API on Vercel Functions"
+      - platform: "Railway"
+        description: "Full-stack deployment on Railway"
+      - platform: "Render"
+        description: "Full-stack deployment on Render"
+      - platform: "Docker"
+        description: "Containerized deployment with Docker Compose"
+      - platform: "Kubernetes"
+        description: "Container orchestration with Kubernetes"
+      - platform: "VPS"
+        description: "Traditional VPS deployment with PM2"
