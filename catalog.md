@@ -4,10 +4,6 @@
 This catalog is the authoritative index of available scaffolds in the **IDP templates**.  
 Agents MUST read this file before suggesting or listing stacks/technologies.
 
-- **Status:** Active
-- **Last updated:** YYYY-MM-DD
-- **Conventions:** Use the **Templates Index** (machine-readable) to enumerate options; use **Template Details** to render human guidance.
-
 ## Templates Index
 
 <!--
