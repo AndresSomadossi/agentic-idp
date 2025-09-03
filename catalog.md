@@ -8,28 +8,6 @@ Agents MUST read this file before suggesting or listing stacks/technologies.
 - **Last updated:** YYYY-MM-DD
 - **Conventions:** Use the **Templates Index** (machine-readable) to enumerate options; use **Template Details** to render human guidance.
 
----
-
-## No-Go Technologies
-
-**Banned Technologies**  
-The following technologies are explicitly NOT supported and should never be suggested:
-
-- **Java** - Not supported in this IDP
-- **C#/.NET** - Not supported in this IDP
-- **PHP** - Not supported in this IDP
-- **Ruby** - Not supported in this IDP
-- **Scala** - Not supported in this IDP
-
-**Deployment Platforms**  
-Supported deployment options include:
-- **Cloud:** AWS, Azure, Google Cloud, Vercel, Netlify, Railway, Render
-- **Container:** Docker, Kubernetes
-- **Serverless:** AWS Lambda, Azure Functions, Vercel Functions
-- **VPS:** DigitalOcean, Linode, Hetzner
-
----
-
 ## Templates Index
 
 <!--
@@ -166,3 +144,25 @@ templates:
         description: "Container orchestration with Kubernetes"
       - platform: "VPS"
         description: "Traditional VPS deployment with PM2"
+```
+---
+
+## No-Go Technologies
+
+**Banned Technologies**  
+The following technologies are explicitly NOT supported and should never be suggested:
+
+- **Java** - Not supported in this IDP
+- **C#/.NET** - Not supported in this IDP
+- **PHP** - Not supported in this IDP
+- **Ruby** - Not supported in this IDP
+- **Scala** - Not supported in this IDP
+
+**Deployment Platforms**  
+Supported deployment options include:
+- **Cloud:** AWS, Azure, Google Cloud, Vercel, Netlify, Railway, Render
+- **Container:** Docker, Kubernetes
+- **Serverless:** AWS Lambda, Azure Functions, Vercel Functions
+- **VPS:** DigitalOcean, Linode, Hetzner
+
+---
