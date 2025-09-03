@@ -1,4 +1,4 @@
-# Backend — Bun + TypeScript, Drizzle, Zod, Azure Blob
+# Backend — Bun + TypeScript
 
 ## Overview
 
