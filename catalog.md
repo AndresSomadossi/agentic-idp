@@ -31,7 +31,7 @@ Fields:
 ```yaml
 templates:
   - id: backend-bun-ts
-    name: Backend — Bun + TypeScript, Drizzle, Zod, Azure Blob
+    name: Backend — Bun + TypeScript (Drizzle, Zod)
     category: backend
     runtime: bun
     language: typescript
@@ -44,7 +44,7 @@ templates:
       - storage
       - processing
       - config
-    recommended_use: "High-throughput TypeScript backend on Bun with FP patterns, strong typing, and blob storage."
+    recommended_use: "High-throughput TypeScript backend on Bun with FP patterns and strong typing
     template_path: templates/backend-bun-ts
     entrypoints:
       - backend/index.ts
