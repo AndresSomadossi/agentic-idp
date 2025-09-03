@@ -40,7 +40,7 @@ templates:
       - storage
       - processing
       - config
-    recommended_use: "High-throughput TypeScript backend on Bun with FP patterns and strong typing
+    recommended_use: "High-throughput TypeScript backend on Bun with FP patterns and strong typing"
     template_path: templates/backend-bun-ts
     entrypoints:
       - backend/index.ts
